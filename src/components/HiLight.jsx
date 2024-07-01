@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react';
 import { rightImg, watchImg } from '../utils';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
+import VideoContent from './videoContent';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -22,7 +23,7 @@ const HiLight = () => {
                 trigger: '#title',
                 start: 'top 90%',
                 end: '25% 92%',
-                markers: true,
+                // markers: true,
                 toggleActions: 'restart none reverse none'
             }
         }),
@@ -92,9 +93,7 @@ const HiLight = () => {
                         </p>
                     </div>
                 </div>
-                <div style={{height:'400px'}}>
-
-                </div>
+                <VideoContent />
             </div>
         </section>
     )
